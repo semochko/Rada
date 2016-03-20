@@ -3,11 +3,12 @@ package rada;
 import java.util.Scanner;
 
 /**
+ * This class contains all the information about deputy.
+ * The information is entered from the console
  * 
  * @author Ivan
  *
  */
-
 public class Deputy {
 
 	Scanner sc = new Scanner(System.in);
@@ -28,6 +29,10 @@ public class Deputy {
 		this.grafter = readBride();
 	}
 
+	/**
+	 * Reads words from the console
+	 * @return the correct name
+	 */
 	public String readName() {
 		while (true) {
 			if (!(sc.hasNextInt())) {
@@ -42,6 +47,10 @@ public class Deputy {
 		}
 	}
 
+	/**
+	 * Reads words from the console
+	 * @return person's gender
+	 */
 	public String readGender() {
 		while (true) {
 			if (!(sc.hasNextInt())) {
@@ -62,6 +71,10 @@ public class Deputy {
 		}
 	}
 
+	/**
+	 * Reads numbers from the console
+	 * @return correct age
+	 */
 	public int readAge() {
 		while (true) {
 			if (sc.hasNextInt()) {
@@ -76,7 +89,11 @@ public class Deputy {
 			}
 		}
 	}
-
+	
+	/**
+	 * Reads numbers from the console
+	 * @return boolean form whether a person is bribe-taker
+	 */
 	public boolean readBride() {
 		while (true) {
 			if (sc.hasNextInt()) {
